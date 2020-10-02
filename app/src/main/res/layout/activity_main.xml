@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:layout_margin="20dp"
+        android:id="@+id/NIMHANS_icon"
+        android:src="@drawable/nimhans_icon"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/NIMHANS_icon"
+        android:text="Start Scan"
+        android:background="@drawable/button_rounded"
+        tools:ignore="HardcodedText"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:layout_margin="15dp"
+        android:id="@+id/btnScan"
+        android:onClick="btn_start_scan"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnScan"
+        android:text="Select Department"
+        android:background="@drawable/button_rounded"
+        tools:ignore="HardcodedText"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="btn_select_department"/>
+
+</RelativeLayout>
